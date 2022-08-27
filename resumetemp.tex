@@ -1,0 +1,96 @@
+\documentclass{article}
+\thispagestyle{empty}
+
+\usepackage[compact]{titlesec}
+\usepackage{titling}
+\usepackage[margin=.8in]{geometry}
+\usepackage{setspace}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{letterspace}
+
+\usepackage{microtype}
+
+\titleformat{\section}
+{\large\bfseries\uppercase}
+{}
+{0em}
+{}[\titlerule]
+
+
+\titleformat{\subsection}
+{\bfseries}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+  {\bfseries}
+  {}{0em}{}
+  [\mbox{ -- }]
+
+\renewcommand{\maketitle}{
+
+\begin{center}
+{\huge\bfseries
+\theauthor}
+
+
+aydenjmason@gmail.com --- aydenmason.com --- 618-979-2169
+\end{center}
+}
+
+\setlist[itemize]{leftmargin=0em}
+
+\begin{document}
+
+\bgroup\obeylines
+\title{Resume}
+\author{Ayden Mason}
+
+\maketitle
+\section{\textls[75]{Experience}}
+\begin{itemize}
+\subsection{Cigna\hfill\mdseries July 2021 - Present}
+
+
+ \item[] \textit{Software Engineer [JavaScript, Python, pgSQL, Bash, Node.js]}
+\item Developed features for ‘The Doctor’ which is an internally used automation tool mainly used for scheduling tasks and generating reports. Interfaced with customers, forlumated roadmapping, and provided analysis based on timelines.
+\item Product owner of automated ETL process for survey data that comes in from various sources such as mySQL, Verint, Qualtrics.  
+\item Lead automation process of PostgreSQL configuration when a new VM is deployed for 'The Doctor'. The  purpose of this is to quickly change the database to store its data on the NAS rather than locally on the VM. This lowered the space required for each VM by 15\%.
+\item Won enterprise-wide hackathon in 2022: Sentiment analysis on social media posts mentioning Cigna.\\
+\end{itemize}
+\begin{itemize}
+\subsection*{Leidos\hfill\mdseries Summer 2019/2020}
+\item[] \textit{Software Engineer Intern [JavaScript, SQL, VBA]}
+\item Acquired Department of Defense security clearance level: Secret
+\item Implemented security features required by DoD to be active on various webpages.
+\item Researched new automation tool 'Itential' this application's purpose is to implement Software Defined Networking to the architecture. Spent over half the summer gathering my findings. At the end of internship I presented my findings to upper managment and other important figures within the DoD.
+\item Designed and Implemented an org-chart generato. This chart was updated quartlery for criticial level stakeholders.
+\item Created a SQL database that was instrumental in usage for senior technical staff members for time-sensitive, high-level roadmapping.
+\end{itemize}
+\section{\\\textls[75]{SKILLS}}
+\subsubsection{Languages}
+C/C++, Python, JavaScript, Bash, SQL 
+\subsubsection{Frameworks}
+Node, Flask
+\subsubsection{Utility}
+Git, Linux, HTML, CSS, AWS
+\subsubsection{Hobby}
+Unity, Blender, React
+\section{\\\textls[75]{PROJECTS}}
+\begin{itemize}
+\item 'eRolla' a marketplace web app that allows users in Rolla to sell items. - Python/Flask 
+\item Built a Lisp Interpeter. -  C++
+\item Developed a word instance counter that tracks vocabulary on essays. - C++ 
+\item 'Password Machine' a program to create and store passwords safely. - Python 
+\end{itemize}
+\section{\\\textls[75]{Education}}
+\begin{itemize}
+\subsection*{Missouri University of Science and Technology\hfill\mdseries Graduated May 2021}
+\item Bachelor of Science in Computer Science
+\item Teaching Assistant for CS 5001 - Intro to Virtual Reality
+\item ACM SIG COMP
+\end{itemize}
+\end{document}
