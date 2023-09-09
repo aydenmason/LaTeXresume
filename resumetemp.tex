@@ -1,6 +1,6 @@
 \documentclass{article}
 \thispagestyle{empty}
-
+\usepackage{xcolor}
 \usepackage[compact]{titlesec}
 \usepackage{titling}
 \usepackage[margin=.7in]{geometry}
@@ -50,47 +50,53 @@ aydenjmason@gmail.com --- aydenmason.com --- 618-979-2169
 \author{Ayden Mason}
 
 \maketitle
-\section{\textls[75]{Experience}}
+\color{blue}
+\section{\\\textls[75]{Technologies and Languages}}
+\color{black}
 \begin{itemize}
-\subsection{Cigna\hfill\mdseries July 2021 - Present}
-
-
- \item[] \textit{Software Engineer [JavaScript, Python, pgSQL, Bash, Node.js]}
-\item Developed features for ‘The Doctor’ which is an internally used automation tool mainly used for scheduling tasks and generating reports. Interfaced with customers, forlumated roadmapping,  provided analysis based on timelines, and followed CI/CD pipeline.
-\item Product owner of automated ETL process for survey data that comes in from various sources such as mySQL, Verint, Qualtrics.
-\item Lead automation process of PostgreSQL configuration when a new VM is deployed for 'The Doctor'. The  purpose of this is to quickly change the database to store its data on the NAS rather than locally on the VM. This was important not only for saving around 10\% space per VM, but it also insured the team had access to the pgSQL data incase the VM instance went down.
-\item Won enterprise-wide hackathon in 2022: Sentiment analysis on social media posts mentioning Cigna.\\
+\item Golang, C++, Python, JavaScript, Bash, pgSQL, DynamoDB, AWS
+\item HTML, CSS, Git, Linux, API Design, Unit Testing
+\end{itemize}
+% uncomment for game dev jobs
+%\subsubsection
+%Unity, Blender, React
+\color{blue}
+\section{\\\textls[75]{Experience}}
+\color{black}
+\begin{itemize}
+\subsection{\large Cigna\hfill\mdseries July 2021 - Present}
+ \item[] \textit{Full-Stack Software Engineer } %[Golang, JavaScript, Python, Bash, Node.js]
+\item Building middleware API layer for My.Cigna.com that offloads searching dynamoDB from a BFF layer to new middleware layer, yielding a more responsive app. Allows for other applications to utilize search functionalilty of dynamoDB. [Go]
+\item Constructed automated tests for features before they were sent through CI/CD pipeline. [Go]
+\item Successfully implemented features directly from headless archtiecure diagrams. [Go, API design]
+\item Developed features for internal automation tool used for scheduling jobs and generating reports. Interfaced with customers, forlumated roadmapping,  provided analysis based on timelines. [JS, Node]
+\item Designed an automated ETL process for survey data that aggregates data from multiple sources. [Python, SQL]
+\item Won enterprise-wide hackathon in 2022: Sentiment analysis on social media posts mentioning Cigna. [JS, Node]
 \end{itemize}
 \begin{itemize}
-\subsection*{Leidos\hfill\mdseries Summer 2019/2020}
-\item[] \textit{Software Engineer Intern [JavaScript, SQL, VBA]}
-\item Acquired Department of Defense security clearance level: Secret
-\item Implemented security features required by DoD to be active on various webpages.
+\subsection{\\\large Leidos\hfill\mdseries Summer 2019/2020}
+\item[] \textit{Software Engineer Intern } %[JavaScript, SQL, VBA]
+\item Acquired Department of Defense security clearance level: Secret.
+\item Implemented security features required by DoD to be active on various webpages. [JS]
 \item Researched new automation tool 'Itential' this application's purpose is to implement Software Defined Networking to the architecture. Spent over half the summer gathering my findings. At the end of internship I presented my findings to upper managment and other important figures within the DoD.
-\item Designed and Implemented an org-chart generator. This chart was updated quarterly for criticial level stakeholders.
-\item Created a SQL database that was instrumental to senior staff members for time-sensitive, high-level roadmapping.
+\item Designed and Implemented an org-chart generator. This chart was updated quarterly for criticial level stakeholders. [SQL, VBA]
+\item Created a SQL database that was instrumental to senior staff members for time-sensitive, high-level roadmapping. [SQL, VBA]
 \end{itemize}
-\section{\\\textls[75]{SKILLS}}
-\subsubsection{Languages}
-C/C++, Python, JavaScript, Bash, SQL 
-\subsubsection{Frameworks}
-Node, Flask
-\subsubsection{Utility}
-Git, Linux, HTML, CSS, AWS
-\subsubsection{Hobby}
-Unity, Blender, React
-\section{\\\textls[75]{PROJECTS}}
-\begin{itemize}
-\item 'eRolla' a marketplace web app that allows users in Rolla to sell items. - Python/Flask 
-\item Built a Lisp Interpeter. -  C++
-\item Developed a word instance counter that tracks vocabulary on essays. - C++ 
-\item 'Password Machine' a program to create and store passwords safely. - Python 
-\end{itemize}
+\color{blue}
 \section{\\\textls[75]{Education}}
+\color{black}
 \begin{itemize}
-\subsection*{Missouri University of Science and Technology\hfill\mdseries Graduated May 2021}
+\subsection{\large Missouri University of Science and Technology\hfill\mdseries Graduated May 2021}
 \item Bachelor of Science in Computer Science
 \item Teaching Assistant for CS 5001 - Intro to Virtual Reality
 \item ACM SIG COMP
 \end{itemize}
+\color{blue}
+\section{\\\textls[75]{PROJECTS}}
+\color{black}
+\begin{itemize}
+  \item 'eRolla' a marketplace web app that allows users in Rolla to sell items. [Python, Flask]
+  \item Built a Lisp Interpeter. [C++]
+  \item Currently building a Graphics Renderer to later be used for a game engine. [Go, C++]
+  \end{itemize}
 \end{document}
